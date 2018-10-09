@@ -33,7 +33,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bluebreezecf/opentsdb-goclient/config"
+	"github.com/arqu/opentsdb-goclient/opentsdb-config"
 )
 
 const (
@@ -107,8 +107,8 @@ type Client interface {
 	// This endpoint allows for storing data in OpenTSDB over HTTP as an alternative to the Telnet interface.
 	//
 	// datas is a slice of DataPoint holding at least one instance.
-	// queryParam can only be github.com/bluebreezecf/opentsdb-goclient/client.PutRespWithSummary,
-	// github.com/bluebreezecf/opentsdb-goclient/client.PutRespWithDetails or the empty string "";
+	// queryParam can only be github.com/arqu/opentsdb-goclient/client.PutRespWithSummary,
+	// github.com/arqu/opentsdb-goclient/client.PutRespWithDetails or the empty string "";
 	// It means get put summary response info by using PutRespWithSummary, and
 	// with PutRespWithDetails means get put detailed response.
 	//
