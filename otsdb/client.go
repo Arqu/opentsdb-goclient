@@ -33,7 +33,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/arqu/opentsdb-goclient/opentsdb-config"
+	"github.com/arqu/opentsdb-goclient/otsdb-config"
 )
 
 const (
