@@ -66,6 +66,12 @@ type QueryParam struct {
 	// those data points will be down sampled using the query's aggregation function.
 	MsResolution bool `json:"msResolution,omitempty"`
 
+	// An optional value to generate summaries
+	ShowSummary bool `json:"showSummary,omitempty"`
+
+	// An optional value to generate stats
+	ShowStats bool `json:"showStats,omitempty"`
+
 	// An optional value is used to show whether or not to output the TSUIDs associated with timeseries in the results.
 	// If multiple time series were aggregated into one set, multiple TSUIDs will be returned in a sorted manner.
 	ShowTSUIDs bool `json:"showTSUIDs,omitempty"`
